@@ -31,7 +31,7 @@ global.config = {
     // will not have its files combined (this is for projects using HTTP/2
     // server push). Using the 'both' option will create two output projects,
     // one for bundled and one for unbundled
-    bundleType: 'both'
+    bundleType: 'bundled'
   },
   // Path to your service worker, relative to the build root directory
   serviceWorkerPath: 'service-worker.js',
@@ -48,6 +48,7 @@ global.config = {
 const clean = require('./gulp-tasks/clean.js');
 const images = require('./gulp-tasks/images.js');
 const project = require('./gulp-tasks/project.js');
+const project = require('./gulp-tasks/deploy.js');
 
 // The source task will split all of your source files into one
 // big ReadableStream. Source files are those in src/** as well as anything
