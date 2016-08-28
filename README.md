@@ -1,6 +1,6 @@
 # generator-polymer-init-custom-build-gae
 
-[![Build Status](https://travis-ci.org/chuckh/generator-polymer-init-custom-build-gae.svg?branch=eslint-travis)](https://travis-ci.org/chuckh/generator-polymer-init-custom-build-gae)
+[![Build Status](https://travis-ci.org/chuckh/generator-polymer-init-custom-build-gae.svg?branch=master)](https://travis-ci.org/chuckh/generator-polymer-init-custom-build-gae)
 
 This template is a starting point for building apps using Polymer Starter Kit
 with a custom gulp process leveraging
