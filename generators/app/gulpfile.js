@@ -46,9 +46,9 @@ global.config = {
 // A few sample tasks are provided for you
 // A task should return either a WriteableStream or a Promise
 const clean = require('./gulp-tasks/clean.js');
+const deploy = require('./gulp-tasks/deploy.js');
 const images = require('./gulp-tasks/images.js');
 const project = require('./gulp-tasks/project.js');
-const deploy = require('./gulp-tasks/deploy.js');
 
 // The source task will split all of your source files into one
 // big ReadableStream. Source files are those in src/** as well as anything
