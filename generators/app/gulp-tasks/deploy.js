@@ -14,8 +14,11 @@
 // GAE requires Google Cloud SDK to be installed and configured.
 // For info on SDK: https://cloud.google.com/sdk/
 
+const gulp = require('gulp');
+const $ = require('gulp-load-plugins')();
+
 // Google App Engine project id
-const projectID = "gae-starter-kit"
+const projectID = 'gae-starter-kit';
 
 // Deploys to Google App Engine
 function deploy() {

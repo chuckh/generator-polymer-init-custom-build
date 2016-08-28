@@ -48,7 +48,7 @@ global.config = {
 const clean = require('./gulp-tasks/clean.js');
 const images = require('./gulp-tasks/images.js');
 const project = require('./gulp-tasks/project.js');
-const project = require('./gulp-tasks/deploy.js');
+const deploy = require('./gulp-tasks/deploy.js');
 
 // The source task will split all of your source files into one
 // big ReadableStream. Source files are those in src/** as well as anything
@@ -80,4 +80,10 @@ gulp.task('default', gulp.series([
   clean.build,
   project.merge(source, dependencies),
   project.serviceWorker
+]));
+
+// with their own service workers
+gulp.task('deploy', gulp.series([
+  clean.build,
+  deploy.deploy
 ]));

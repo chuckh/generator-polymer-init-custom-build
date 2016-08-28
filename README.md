@@ -98,10 +98,9 @@ components (and will have bundles created in the fallback `bundled` build).
 
 ### Deploy to Google App Engine
 
-You will test, build, then deploy.
+You will want to first test, then build and deploy.  Gulp task `gulp deploy` first builds then deploys to Google App Engine.
 
     polymer test
-    gulp
     gulp deploy
 
 
