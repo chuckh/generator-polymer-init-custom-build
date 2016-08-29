@@ -85,5 +85,5 @@ gulp.task('default', gulp.series([
 // with their own service workers
 gulp.task('deploy', gulp.series([
   clean.build,
-  deploy.deploy
+  deploy.gaeDeploy
 ]));

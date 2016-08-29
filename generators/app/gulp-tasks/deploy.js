@@ -14,19 +14,21 @@
 // GAE requires Google Cloud SDK to be installed and configured.
 // For info on SDK: https://cloud.google.com/sdk/
 
-const gulp = require('gulp');
-const $ = require('gulp-load-plugins')();
+const exec = require('child_process').exec;
 
 // Google App Engine project id
 const projectID = 'gae-starter-kit';
 
 // Deploys to Google App Engine
-function deploy() {
-  // var deployCmd = 'appcfg.py -A gae-starter-kit update app.yaml'
-  var deployCmd = 'gcloud app deploy app.yaml -q --project ' + projectID;
-  return gulp.src('').pipe($.shell(deployCmd));
+function gaeDeploy(cb) {
+  let deployCmd = 'appcfg.py -A ' + projectID + ' update app.yaml'
+  exec(deployCmd, function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 }
 
 module.exports = {
-  deploy: deploy
+  gaeDeploy: gaeDeploy
 };
