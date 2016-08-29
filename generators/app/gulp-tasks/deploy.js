@@ -21,7 +21,7 @@ const projectID = 'gae-starter-kit';
 
 // Deploys to Google App Engine
 function gaeDeploy(cb) {
-  let deployCmd = 'appcfg.py -A ' + projectID + ' update app.yaml'
+  let deployCmd = 'appcfg.py -A ' + projectID + ' update app.yaml';
   exec(deployCmd, function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
