@@ -1,5 +1,5 @@
 # Instruct the server to serve up index.html for any URL's that don't otherwise end in a file extension.
-# Replace {gae-starter-kit} with the project name you chose.
+# Replace application: {gae-starter-kit} with the project name you chose.
 
 application: gae-starter-kit
 version: 1
@@ -42,3 +42,4 @@ skip_files:
 - ^(.*/)?.*/RCS/.*$
 - ^(.*/)?\..*$
 - ^(.*/)?\.bak$
+- ^node_modules/(?!node\.js$).*
