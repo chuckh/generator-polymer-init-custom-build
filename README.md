@@ -103,6 +103,16 @@ You can test first, then build and deploy.  Gulp task `gulp deploy` first builds
     gulp deploy
 
 
+### To update the `generator-polymer-init-custom-build-gae` template do the following.
+
+    npm update -g generator-polymer-init-custom-build-gae
+
+
+### Demo of this template:
+
+[gae-starter-kit.appspot.com](https://gae-starter-kit.appspot.com/)
+---
+
 ## License
 
 The Polymer project uses a BSD-like license available [here](./LICENSE.txt)
