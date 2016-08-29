@@ -24,7 +24,7 @@ module.exports = yeoman.Base.extend({
     this.sourceRoot(path.join(path.dirname(this.resolved)));
     this.fs.copy([
       this.templatePath('gulp-tasks/**/*'),
-      this.templatePath('{gulpfile.js,package.json}')
+      this.templatePath('{gulpfile.js,package.json,app.yaml}')
     ], this.destinationPath());
   },
 
