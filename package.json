@@ -1,6 +1,6 @@
 {
   "name": "generator-polymer-init-custom-build-gae",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A starting point for building apps using polymer-build and deploying to Google App Engine",
   "files": [
     "generators"
