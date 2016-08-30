@@ -66,10 +66,9 @@ the same library that powers Polymer CLI. Out of the box it will clean the
 
 ### Preview the build
 
-This command serves the minified version of the app at `http://localhost:8080`
-generated using fragment bundling:
+This command serves the minified version of the app at http://localhost:8080 in an unbundled state, as it would be served by a push-compatible server such as Google App Engine:
 
-    polymer serve build/bundled
+    polymer serve build/unbundled
 
 ### Run tests
 
