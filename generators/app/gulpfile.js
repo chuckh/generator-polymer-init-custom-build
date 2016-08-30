@@ -86,6 +86,6 @@ gulp.task('default', gulp.series([
 gulp.task('deploy', gulp.series([
   clean.build,
   project.merge(source, dependencies),
-  project.serviceWorker
+  project.serviceWorker,
   deploy.gaeDeploy
 ]));
