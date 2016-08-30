@@ -44,6 +44,8 @@ Generate your new project using `polymer init`:
 
 5. Change `gae-starter-kit` in gulp-tasks/deploy.js `projectID = "gae-starter-kit"` to your Google App Engine project name.
 
+---
+
 ### Start the development server
 
 This command serves the app at `http://localhost:8080` and provides basic URL
@@ -101,15 +103,20 @@ You can test first, then build and deploy.  Gulp task `gulp deploy` first builds
     polymer test
     gulp deploy
 
+---
+
+### Demo of this template on Google App Engine:
+
+#### [gae-starter-kit.appspot.com](https://gae-starter-kit.appspot.com/)
+
+---
 
 ### To update the `generator-polymer-init-custom-build-gae` template do the following.
 
     npm update -g generator-polymer-init-custom-build-gae
 
 
-### Demo of this template:
 
-[gae-starter-kit.appspot.com](https://gae-starter-kit.appspot.com/)
 ---
 
 ## License
